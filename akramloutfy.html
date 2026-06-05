@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akram Loutfy | CEO & High-Performance Director</title>
+    <meta name="description" content="Akram Loutfy: Building Champions in Business and Swimming. CEO of GPS Investments & Elite Swimming Coach.">
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        navy: '#0A1128',
+                        dark: '#050B14',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS for Animations -->
+    <style>
+        /* Import Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+        body {
+            background-color: #050B14;
+            color: #e2e8f0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        ::selection {
+            background-color: #D4AF37;
+            color: #000;
+        }
+
+        /* Scroll Animation Classes */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Staggered delays for child elements */
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+        .delay-400 { transition-delay: 400ms; }
+
+        /* Navbar scroll effect */
+        .nav-scrolled {
+            background-color: rgba(5, 11, 20, 0.9);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-gold selection:text-black">
+
+    <!-- NAVIGATION -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="text-2xl font-bold tracking-tighter text-white">
+                AKRAM<span class="text-gold">LOUTFY</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide">
+                <a href="#about" class="hover:text-gold transition-colors">ABOUT</a>
+                <a href="#leadership" class="hover:text-gold transition-colors">LEADERSHIP</a>
+                <a href="#coaching" class="hover:text-gold transition-colors">COACHING</a>
+                <a href="#impact" class="hover:text-gold transition-colors">IMPACT</a>
+            </div>
+            <a href="#contact" class="hidden md:inline-flex items-center px-6 py-2.5 bg-gold text-black font-semibold rounded-full hover:bg-white transition-all">
+                Let's Connect
+            </a>
+        </div>
+    </nav>
+
+    <!-- 1. HERO SECTION -->
+    <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 px-6 max-w-7xl mx-auto flex flex-col justify-center min-h-[95vh]">
+        <div class="max-w-4xl">
+            <p class="reveal text-gold font-semibold tracking-widest uppercase mb-4">
+                CEO, Mentor, Visionary & Elite Coach
+            </p>
+            <h1 class="reveal delay-100 text-5xl md:text-7xl font-extrabold text-white leading-tight mb-8">
+                Building Champions in <br />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold to-yellow-200">
+                    Business & Swimming.
+                </span>
+            </h1>
+            <p class="reveal delay-200 text-lg md:text-xl text-slate-400 mb-10 max-w-2xl leading-relaxed">
+                "Most elite swimming programs don't fail because of talent. They fail because there's no system behind the talent." <br/><br/>
+                I build systems—from national federations to investment-level sports infrastructure—producing champions over years, not seasons.
+            </p>
+            <div class="reveal delay-300 flex flex-col sm:flex-row gap-4">
+                <a href="#about" class="px-8 py-4 bg-gold text-black font-bold rounded-full hover:bg-white transition-colors flex items-center justify-center">
+                    View My Journey <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+                <a href="#contact" class="px-8 py-4 bg-transparent border border-white/20 text-white font-bold rounded-full hover:border-gold hover:text-gold transition-colors flex items-center justify-center">
+                    Let's Connect
+                </a>
+            </div>
+        </div>
+
+        <!-- Hero Stats -->
+        <div class="reveal delay-400 grid grid-cols-2 md:grid-cols-4 gap-6 mt-20 border-t border-white/10 pt-10">
+            <div>
+                <div class="text-3xl md:text-4xl font-bold text-white mb-1">17+</div>
+                <div class="text-sm text-slate-400 uppercase tracking-wider">Years Experience</div>
+            </div>
+            <div>
+                <div class="text-3xl md:text-4xl font-bold text-white mb-1">63</div>
+                <div class="text-sm text-slate-400 uppercase tracking-wider">National Athletes</div>
+            </div>
+            <div>
+                <div class="text-3xl md:text-4xl font-bold text-white mb-1">12</div>
+                <div class="text-sm text-slate-400 uppercase tracking-wider">World Champions</div>
+            </div>
+            <div>
+                <div class="text-3xl md:text-4xl font-bold text-white mb-1">7,000+</div>
+                <div class="text-sm text-slate-400 uppercase tracking-wider">Medals Won</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. ABOUT SECTION -->
+    <section id="about" class="py-24 bg-navy border-y border-white/5 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div class="reveal">
+                <div class="aspect-[4/5] bg-slate-800 rounded-2xl overflow-hidden relative border border-white/10 shadow-2xl">
+                    <!-- Replace the src below with a real link to your photo -->
+                    <!-- <img src="your-photo.jpg" alt="Akram Loutfy" class="object-cover w-full h-full opacity-80" /> -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-transparent z-10"></div>
+                    <div class="w-full h-full bg-[#111827] flex flex-col items-center justify-center text-slate-600">
+                        <i class="fa-solid fa-camera text-4xl mb-3"></i>
+                        <span>Portrait Placeholder</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <h2 class="reveal text-3xl md:text-5xl font-bold text-white mb-6">
+                    The Intersection of <span class="text-gold">Coaching & Infrastructure</span>
+                </h2>
+                <div class="reveal delay-100 space-y-6 text-slate-300 text-lg leading-relaxed">
+                    <p>
+                        In 2011, I founded AK Swimming Team in Alexandria with no federation backing and no shortcuts. What I built instead was a structured high-performance environment utilizing Long-Term Athlete Development (LTAD) pathways and biomechanics-led training.
+                    </p>
+                    <p>
+                        Today, as CEO of Green Plaza Sports Investment, I merge 17 years of elite sports coaching with strategic business leadership. My work revolves around building talent identification systems, managing elite sports facilities, and forging institutional partnerships.
+                    </p>
+                    <p>
+                        I partner with federations, Olympic clubs, and sports investment groups who are serious about building enduring performance systems—not chasing short-term results.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. LEADERSHIP & BUSINESS SECTION -->
+    <section id="leadership" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="reveal text-center mb-16">
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Executive Leadership</h2>
+            <p class="text-slate-400 max-w-2xl mx-auto">Driving commercial and operational growth through strategic performance programs.</p>
+        </div>
+
+        <div class="reveal delay-100 bg-navy border border-white/10 rounded-3xl p-8 md:p-12 shadow-2xl">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-gold mb-2">CEO, High Performance Director</h3>
+                    <h4 class="text-xl text-white mb-6">Green Plaza Sports Investment (GPSC)</h4>
+                    <p class="text-slate-300 mb-8">
+                        Overseeing the overall management and strategic direction of Alexandria's leading multi-sport complex, covering operations, sports programs, team leadership, and institutional partnerships.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-chevron-right text-gold mt-1 mr-3"></i>
+                            <span class="text-slate-300">Reviewing and developing performance programs across all sports disciplines.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-chevron-right text-gold mt-1 mr-3"></i>
+                            <span class="text-slate-300">Building structured coaching & athlete development systems (LTAD).</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-chevron-right text-gold mt-1 mr-3"></i>
+                            <span class="text-slate-300">Strengthening relationships with local federations, clubs, and sports bodies.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-chevron-right text-gold mt-1 mr-3"></i>
+                            <span class="text-slate-300">Supporting commercial and operational growth of the facility.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-dark rounded-2xl p-8 border border-white/5 flex flex-col justify-center transform transition duration-500 hover:scale-105">
+                    <i class="fa-solid fa-trophy text-5xl text-gold mb-6"></i>
+                    <h4 class="text-2xl font-bold text-white mb-4">The GPSC Vision</h4>
+                    <p class="text-slate-400 italic">
+                        "Creating elite training environments across swimming, fitness, and competitive sports programs, open to partnerships with sports investors and institutions building serious programs in Egypt and the region."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SWIMMING COACHING SECTION -->
+    <section id="coaching" class="py-24 bg-navy border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="reveal mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Elite Coaching Excellence</h2>
+                <p class="text-gold font-medium tracking-wide">1 SYSTEM. 12 WORLD CHAMPIONS. 63 NATIONAL ATHLETES.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="reveal bg-dark p-8 rounded-2xl border border-white/5 hover:border-gold/50 transition-colors">
+                    <h3 class="text-xl font-bold text-white mb-2">AK Swimming Team</h3>
+                    <p class="text-gold text-sm mb-4">Founder & Head Coach (14+ Years)</p>
+                    <p class="text-slate-400 text-sm mb-6">Founded in 2011, now Alexandria's leading high-performance academy with uninterrupted competitive operation.</p>
+                    <ul class="space-y-3 text-sm text-slate-300">
+                        <li class="flex items-center"><i class="fa-solid fa-star text-gold mr-3"></i> 8 World Champions at CMAS</li>
+                        <li class="flex items-center"><i class="fa-solid fa-star text-gold mr-3"></i> 21 African & 23 Arab Champions</li>
+                        <li class="flex items-center"><i class="fa-solid fa-star text-gold mr-3"></i> 7,000+ Medals Accumulated</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="reveal delay-100 bg-dark p-8 rounded-2xl border border-white/5 hover:border-gold/50 transition-colors">
+                    <h3 class="text-xl font-bold text-white mb-2">National Teams</h3>
+                    <p class="text-gold text-sm mb-4">Egypt & Kuwait</p>
+                    <p class="text-slate-400 text-sm mb-6">Directing international qualification camps, preparing athletes through race-specific conditioning programs.</p>
+                    <ul class="space-y-3 text-sm text-slate-300">
+                        <li class="flex items-center"><i class="fa-solid fa-star text-gold mr-3"></i> UIPM World Pentathlon Coach</li>
+                        <li class="flex items-center"><i class="fa-solid fa-star text-gold mr-3"></i> Kuwait Modern Pentathlon Head</li>
+                        <li class="flex items-center"><i class="fa-solid fa-star text-gold mr-3"></i> 49 Athletes developed for Egypt</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="reveal delay-200 bg-dark p-8 rounded-2xl border border-white/5 hover:border-gold/50 transition-colors">
+                    <h3 class="text-xl font-bold text-white mb-2">Olympic Club</h3>
+                    <p class="text-gold text-sm mb-4">Senior Swimming Coach (9+ Years)</p>
+                    <p class="text-slate-400 text-sm mb-6">Led the long-term development of 1,000+ swimmers in one of Alexandria's largest mandates.</p>
+                    <ul class="space-y-3 text-sm text-slate-300">
+                        <li class="flex items-center"><i class="fa-solid fa-star text-gold mr-3"></i> Elevated to Top 5 club in Egypt</li>
+                        <li class="flex items-center"><i class="fa-solid fa-star text-gold mr-3"></i> 150+ active swimmers registered</li>
+                        <li class="flex items-center"><i class="fa-solid fa-star text-gold mr-3"></i> Individualized LTAD plans</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. ACHIEVEMENTS & CERTIFICATIONS -->
+    <section class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-16">
+            <div class="reveal">
+                <h2 class="text-3xl font-bold text-white mb-8 flex items-center">
+                    <i class="fa-solid fa-award text-gold text-3xl mr-4"></i> Global Certifications
+                </h2>
+                <div class="space-y-4">
+                    <div class="p-4 bg-navy border border-white/10 rounded-xl flex items-center hover:border-gold/30 transition-colors">
+                        <div class="w-2 h-2 bg-gold rounded-full mr-4 shadow-[0_0_8px_#D4AF37]"></div>
+                        <span class="font-medium text-slate-200">ASCA Level 5 Senior Coach</span>
+                    </div>
+                    <div class="p-4 bg-navy border border-white/10 rounded-xl flex items-center hover:border-gold/30 transition-colors">
+                        <div class="w-2 h-2 bg-gold rounded-full mr-4 shadow-[0_0_8px_#D4AF37]"></div>
+                        <span class="font-medium text-slate-200">WSCA Gold Certification</span>
+                    </div>
+                    <div class="p-4 bg-navy border border-white/10 rounded-xl flex items-center hover:border-gold/30 transition-colors">
+                        <div class="w-2 h-2 bg-gold rounded-full mr-4 shadow-[0_0_8px_#D4AF37]"></div>
+                        <span class="font-medium text-slate-200">World Aquatics Certified & IOC Certified</span>
+                    </div>
+                    <div class="p-4 bg-navy border border-white/10 rounded-xl flex items-center hover:border-gold/30 transition-colors">
+                        <div class="w-2 h-2 bg-gold rounded-full mr-4 shadow-[0_0_8px_#D4AF37]"></div>
+                        <span class="font-medium text-slate-200">Level 1 Certificate in Strength & Conditioning – IUSCA</span>
+                    </div>
+                    <div class="p-4 bg-navy border border-white/10 rounded-xl flex items-center hover:border-gold/30 transition-colors">
+                        <div class="w-2 h-2 bg-gold rounded-full mr-4 shadow-[0_0_8px_#D4AF37]"></div>
+                        <span class="font-medium text-slate-200">FIFA/CIES Int. Programme in Sports Management</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal delay-100">
+                <h2 class="text-3xl font-bold text-white mb-8 flex items-center">
+                    <i class="fa-solid fa-medal text-gold text-3xl mr-4"></i> Honours & Awards
+                </h2>
+                <div class="space-y-4">
+                    <div class="p-5 bg-gradient-to-r from-navy to-dark border border-gold/20 rounded-xl">
+                        <h4 class="text-lg font-bold text-white">Experienced Contributor</h4>
+                        <p class="text-sm text-gold mt-1">ASCA Global Ranking</p>
+                    </div>
+                    <div class="p-5 bg-gradient-to-r from-navy to-dark border border-gold/20 rounded-xl">
+                        <h4 class="text-lg font-bold text-white">Shield ADM Senior Certified Coach</h4>
+                        <p class="text-sm text-gold mt-1">USA Swimming</p>
+                    </div>
+                    <div class="p-5 bg-gradient-to-r from-navy to-dark border border-gold/20 rounded-xl">
+                        <h4 class="text-lg font-bold text-white">Master Class in Speed Development</h4>
+                        <p class="text-sm text-gold mt-1">Professional Swimming Coach</p>
+                    </div>
+                    <div class="p-5 bg-gradient-to-r from-navy to-dark border border-gold/20 rounded-xl">
+                        <h4 class="text-lg font-bold text-white">Author & Creator</h4>
+                        <p class="text-sm text-gold mt-1">Sports Publications & Science</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. PERSONAL VALUES SECTION -->
+    <section class="py-24 bg-navy border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="reveal text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Core Principles</h2>
+                <p class="text-slate-400">The foundation of every system I build.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                <!-- Value 1 -->
+                <div class="reveal p-8 bg-dark border border-white/5 rounded-2xl text-center group hover:-translate-y-2 transition-transform duration-300">
+                    <i class="fa-solid fa-bullseye text-4xl text-gold mx-auto mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Excellence</h3>
+                    <p class="text-slate-400 text-sm">Setting world-class standards.</p>
+                </div>
+                <!-- Value 2 -->
+                <div class="reveal delay-100 p-8 bg-dark border border-white/5 rounded-2xl text-center group hover:-translate-y-2 transition-transform duration-300">
+                    <i class="fa-solid fa-shield-halved text-4xl text-gold mx-auto mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Discipline</h3>
+                    <p class="text-slate-400 text-sm">Commitment over motivation.</p>
+                </div>
+                <!-- Value 3 -->
+                <div class="reveal delay-200 p-8 bg-dark border border-white/5 rounded-2xl text-center group hover:-translate-y-2 transition-transform duration-300">
+                    <i class="fa-solid fa-arrow-trend-up text-4xl text-gold mx-auto mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Leadership</h3>
+                    <p class="text-slate-400 text-sm">Empowering athletes and executives.</p>
+                </div>
+                <!-- Value 4 -->
+                <div class="reveal p-8 bg-dark border border-white/5 rounded-2xl text-center group hover:-translate-y-2 transition-transform duration-300">
+                    <i class="fa-solid fa-book-open text-4xl text-gold mx-auto mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Integrity</h3>
+                    <p class="text-slate-400 text-sm">Building transparent, honest systems.</p>
+                </div>
+                <!-- Value 5 -->
+                <div class="reveal delay-100 p-8 bg-dark border border-white/5 rounded-2xl text-center group hover:-translate-y-2 transition-transform duration-300">
+                    <i class="fa-solid fa-bolt text-4xl text-gold mx-auto mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Innovation</h3>
+                    <p class="text-slate-400 text-sm">Biomechanics & modern LTAD.</p>
+                </div>
+                <!-- Value 6 -->
+                <div class="reveal delay-200 p-8 bg-dark border border-white/5 rounded-2xl text-center group hover:-translate-y-2 transition-transform duration-300">
+                    <i class="fa-solid fa-trophy text-4xl text-gold mx-auto mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Continuous Growth</h3>
+                    <p class="text-slate-400 text-sm">Developing over years, not seasons.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. IMPACT / VISUAL AREA -->
+    <section id="impact" class="py-32 relative overflow-hidden bg-black flex items-center justify-center">
+        <!-- Decorative background glow -->
+        <div class="absolute w-[500px] h-[500px] bg-gold/10 blur-[120px] rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
+        
+        <div class="relative z-10 text-center max-w-4xl mx-auto px-6">
+            <h2 class="reveal text-4xl md:text-6xl font-extrabold text-white mb-8">
+                7,000+ Medals. <br />
+                1 Multi-Sport Complex. <br />
+                Infinite Potential.
+            </h2>
+            <p class="reveal delay-100 text-xl text-slate-300 mb-10">
+                From the pool deck to the boardroom, my focus remains singular: building environments where extraordinary talent can thrive systematically.
+            </p>
+        </div>
+    </section>
+
+    <!-- 8. CALL TO ACTION -->
+    <section class="py-24 px-6 bg-gradient-to-b from-navy to-dark">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="reveal text-3xl md:text-5xl font-bold text-white mb-6">
+                "Success is built through discipline, vision, and relentless commitment."
+            </h2>
+            <p class="reveal delay-100 text-lg text-slate-400 mb-10">
+                Whether you are a sports investor, a national federation, or an elite club, let's build a serious performance system together.
+            </p>
+            <div class="reveal delay-200 flex flex-col sm:flex-row justify-center items-center gap-6">
+                <a href="mailto:akram.loutfy@greenplazaeg.com" class="px-8 py-4 bg-gold text-black font-bold rounded-full hover:bg-white transition-colors w-full sm:w-auto text-center flex items-center justify-center">
+                    <i class="fa-solid fa-envelope mr-3"></i> Email Me Directly
+                </a>
+                <a href="https://www.linkedin.com/in/akram-loutfy-swim-coach" target="_blank" rel="noreferrer" class="px-8 py-4 border border-gold text-gold font-bold rounded-full hover:bg-gold hover:text-black transition-colors w-full sm:w-auto text-center flex items-center justify-center">
+                    <i class="fa-brands fa-linkedin text-xl mr-3"></i> Connect on LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. FOOTER -->
+    <footer id="contact" class="py-12 bg-black border-t border-white/10 text-center md:text-left">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 items-center">
+            <!-- Brand -->
+            <div>
+                <div class="text-2xl font-bold tracking-tighter text-white mb-2">
+                    AKRAM<span class="text-gold">LOUTFY</span>
+                </div>
+                <p class="text-sm text-slate-500">Alexandria, Egypt</p>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="flex flex-col items-center space-y-3 text-slate-400 text-sm">
+                <a href="mailto:akram.loutfy@greenplazaeg.com" class="hover:text-gold transition-colors flex items-center">
+                    <i class="fa-solid fa-envelope mr-2"></i> akram.loutfy@greenplazaeg.com
+                </a>
+                <div class="flex items-center">
+                    <i class="fa-solid fa-globe mr-2"></i> CEO, Green Plaza Sports Investment
+                </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="flex justify-center md:justify-end space-x-4">
+                <a href="https://www.linkedin.com/in/akram-loutfy-swim-coach" target="_blank" rel="noreferrer" class="w-12 h-12 rounded-full bg-slate-900 flex items-center justify-center text-slate-400 hover:text-gold hover:bg-slate-800 transition-all border border-white/5">
+                    <i class="fa-brands fa-linkedin-in text-xl"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-white/5 text-center text-xs text-slate-600">
+            © <span id="year"></span> Akram Loutfy. All Rights Reserved. Designed for Excellence.
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FOR ANIMATIONS AND SCROLL -->
+    <script>
+        // Set dynamic year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('nav-scrolled');
+                navbar.classList.remove('bg-transparent');
+            } else {
+                navbar.classList.remove('nav-scrolled');
+                navbar.classList.add('bg-transparent');
+            }
+        });
+
+        // Intersection Observer for Scroll Animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const reveals = document.querySelectorAll('.reveal');
+
+            const revealOptions = {
+                threshold: 0.1, // Trigger when 10% of element is visible
+                rootMargin: "0px 0px -50px 0px" // Trigger slightly before element hits bottom of screen
+            };
+
+            const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) {
+                        return;
+                    } else {
+                        // Add class to trigger animation
+                        entry.target.classList.add('active');
+                        // Stop observing once animated
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, revealOptions);
+
+            reveals.forEach(reveal => {
+                revealOnScroll.observe(reveal);
+            });
+        });
+    </script>
+</body>
+</html>
